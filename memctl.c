@@ -70,6 +70,7 @@ int write_mem(struct Arguments *args){
 	default: return-1;
 	}
 	args->mode |= (1<<1);
+	return 0;
 }
 
 // ---- handle given arguments ----
@@ -85,7 +86,6 @@ int proc_args(int argc, char *argv[], struct Arguments *args){
 	}
 	int i;
 	char *endptr;
-	uint32_t num;
 	for(i=1;i<argc;i++){ // iterate over all arguments
 		if(!strcmp(argv[i], "-d") || !strcmp(argv[i], "--debug")){	// DEBUGMODE ? 
 			args->debug = 1;
