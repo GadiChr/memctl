@@ -166,6 +166,8 @@ void print_help(){
 		" OPTIONS:\n"
 		"      w=[HEX_DATA]  ... hexadecimal data to write\n"
 		"      r=[REG_SIZE]  ... size of the register in Bit\n"
+		"      -s|--simple   ... print only the content of the register\n"
+		"      -h|--help     ... print this message\n"
 		"\n"
 	);
 }
